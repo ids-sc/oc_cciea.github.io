@@ -37,25 +37,28 @@ jobs:
             echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
 
       - name: code3_nphIEA_gha, save jan-feb and monthly NPH area netcdf
+        shell: bash -l {0}      
         run: python code_gha/NPH/calc_jan_feb_area_nph.py
 
       - name: code4_nphIEA_gha, IEA CSV for jan-feb NPH
+        shell: bash -l {0}
         run: python code_gha/NPH/create_oc_janfeb_nph_A_std.py
       - name: code5_nphIEA_gha, IEA CSV for monthly NPH
+        shell: bash -l {0}
         run: python code_gha/NPH/create_oc_nph_M_std.py
       - name: code6_nphIEA_gha, IEA CSV for seasonal NPH
+        shell: bash -l {0}
         run: python code_gha/NPH/create_oc_nph_S_std.py
 
       - name: code7_nphIEA_gha, plot month and seasonal
+        shell: bash -l {0}
         run: python code_gha/NPH/plot_iea_figs_MS.py
-      - name: code8_nphIEA_gha, plot jan-feb 
+      - name: code8_nphIEA_gha, plot jan-feb
+        shell: bash -l {0}
         run: python code_gha/NPH/plot_iea_figs_A.py
       - name: code9_nphIEA_gha, plot all months
+        shell: bash -l {0}
         run: python code_gha/NPH/plot_iea_individual_months_A.py
 
       - name: git auto commit
         uses: stefanzweifel/git-auto-commit-action@v7
-      - name: sst daily and monthly update upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          path: data_x13
