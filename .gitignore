@@ -1,6 +1,6 @@
 /.quarto/
 /_site/
-,*.ipynb
-,*.old
+*.ipynb
+*.old
 test.*
 test*.*

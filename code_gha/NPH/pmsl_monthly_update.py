@@ -1,7 +1,7 @@
 import calendar as clndr
 import os
 import urllib.request
-import requests  
+import requests
 import xarray as xr
 import numpy as np
 
@@ -35,7 +35,7 @@ file_type_in = 'nc'
 
 # dir out, will use artifacts to download this data
 dir_out = './data_gha/NPH/'
-dir_download_out = './data_x13/NPH/'
+dir_download_out = dir_out
 
 # -----------------------------------------------------------------------------
 # END: Input variables, change these
