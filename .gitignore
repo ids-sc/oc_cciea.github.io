@@ -4,3 +4,5 @@
 *.old
 test.*
 test*.*
+
+**/*.quarto_ipynb
