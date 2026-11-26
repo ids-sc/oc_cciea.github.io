@@ -24,8 +24,8 @@ dpth2_int = np.arange(0, max_b_dpth+1)
 
 # --output file type extension
 file_type = 'nc'
-file_s = './csv_database_gha/calcofi_stations66.csv'
-dir_ctd_d = './csv_database_gha/ctd_prelim/'
+file_s = './data_gha/CalCofiCSV/calcofi_stations66.csv'
+dir_ctd_d = './data_gha/CalCofiCSV/data_from_calcofi_org/'
 # file_s = './oc_cciea.github.io/data_gha/CalCofiCSV/calcofi_stations66.csv'
 # dir_ctd_d = './oc_cciea.github.io/data_gha/CalCofiCSV/data_from_calcofi_org/'
 
