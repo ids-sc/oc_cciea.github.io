@@ -84,7 +84,7 @@ var2_b_lbl = ['R_POTEMP', 'R_SALINITY', 'R_SIGMA', 'R_DYNHT', 'R_O2', 'R_O2Sat',
 
 # ----------------------Nutrient CSV
 file_n = './data_gha/CalCofiCSV/data_from_calcofi_org/compiled_finalized_nutrients_2111_2504_ALE.csv'
-file_n = './oc_cciea.github.io/data_gha/CalCofiCSV/data_from_calcofi_org/compiled_finalized_nutrients_2111_2504_ALE.csv'
+# file_n = './oc_cciea.github.io/data_gha/CalCofiCSV/data_from_calcofi_org/compiled_finalized_nutrients_2111_2504_ALE.csv'
 
 # ------------------Nutrient
 line_n = 'Line'
